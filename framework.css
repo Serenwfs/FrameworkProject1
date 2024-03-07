@@ -31,9 +31,11 @@ body {
 
 
 /* Typography */
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6,p {
     margin: var( --regular-space) 0;
     color: var(--font-color);
+    text-align: center;
+    font-size: 1em ;
     
 }
 
@@ -42,7 +44,8 @@ h1 {
 }
 
 p {
-    font-size: 1em;
+    max-width: 800px;
+    text-align: center;
 }
 
 
@@ -53,15 +56,15 @@ button {
     color: var(--background-color);
     transition: background-color 0.3s ease;
     border-color: transparent;
-    margin: 5% auto; 
+    margin: 10% auto; 
+    font-family: "Rubik Bubbles", system-ui ;
     
 }
 
 button:hover {
-    background-color: darken(var(--link-color), 10%);
     padding: var(--small-space) var(--small-space);
-    background-color: var(--lightpink);
-    color: var(--background-color);
+    background-color: var(--second-color);
+    color: var(--link-color);
     transition: background-color 0.3s ease;
     border-color: transparent;
 }
@@ -162,7 +165,7 @@ input:focus {
 }
 
 
-img[src="images/home.jpg"] {
+img[src="images/curt.jpg"] {
     width: 100%; 
     height: auto; 
     border-radius: 10px; 
@@ -183,6 +186,7 @@ img {
     width: 100%; /* Adjust the width */
     max-width: 400px; 
     height: auto; 
+    width: 100%; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
     margin-bottom: 20px; /* below each image */

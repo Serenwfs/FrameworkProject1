@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Caveat:wght@400..700&family=Grape+Nuts&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oregano:ital@0;1&family=Rubik+Bubbles&display=swap');
+
+/*Color Palette */
+:root {
+    --background-color:rgb(255, 240, 253);
+    --font-color:rgb(63, 24, 54);
+    --second-color: #dd0549;
+    --lightpink: #fdc8da;
+    --link-color: #f6fca8;
+    --border-color: #ffff00;
+
+    /* Spacing units */
+    --small-space: 2px;
+    --regular-space: 8px;
+    --large-space: 32px;
+}
+
+.title{
+    font-family:  "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    color: var(--font-color);
+    font-size: 4rem;
+    margin: 5% auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, p {
+    margin: var( --regular-space) 0;
+    color: var(--font-color);
+    
+}
+
+h1 {
+    font-size: 1.5em; /* Example size */
+}
+
+p {
+    font-size: 1em;
+}
+
+
+/* Buttons */
+button {
+    padding: var(--small-space) var(--small-space);
+    background-color: var(--lightpink);
+    color: var(--background-color);
+    transition: background-color 0.3s ease;
+    border-color: transparent;
+    margin: 5% auto; 
+    
+}
+
+button:hover {
+    background-color: darken(var(--link-color), 10%);
+    padding: var(--small-space) var(--small-space);
+    background-color: var(--lightpink);
+    color: var(--background-color);
+    transition: background-color 0.3s ease;
+    border-color: transparent;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    padding: var(--small-space) var(--small-space);
+    background-color: var(--lightpink);
+    color: var(--background-color);
+    transition: background-color 0.3s ease;
+    border-color: transparent;
+}
+
+button.success {
+    padding: var(--small-space) var(--small-space);
+    background-color: var(--lightpink);
+    transition: background-color 0.3s ease;
+    border-color: transparent;
+    color: var(--font-color);
+}
+
+button.error {
+    background-color: var();
+    padding: var(--small-space) var(--small-space);
+    background-color: var(--lightpink);
+    color: var(--second-color);
+    transition: background-color 0.3s ease;
+    border-color: transparent;
+}
+
+/* Links */
+a {
+    color: var(--link-color); /* Black text color */
+    text-decoration: none; /* No underline */
+    padding: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content:first baseline; 
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+a:hover {
+    color: var(--lightpink);
+}
+
+a:visited {
+    background: transparent;
+}
+
+/* Text Inputs */
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: var(--space-sm);
+    border: 1px solid var(--border-color);
+    margin-bottom: var(--space-md);
+    width: 100%;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.section {
+    position: relative; /* Allows makes each contain relative so make th other components relative to them */
+    height: 100vh; /* have the section be the size of the scree */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0; /* set the marging to zero again section */
+    padding: 0; 
+}
+
+
+.nav-bar {
+    position: absolute;
+    list-style-type: none; /* Remove the list attribute*/
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row;
+    left: 0;
+    top: 0%; /* position it at the bottom of the section*/
+    width: 100%;
+    height: 50px;
+    background: var(--light); /* This is the pink color from the title and quote */
+    z-index: 10;
+}
+  
+
+
+.nav-bar li {
+    margin: 125px; /* space between navigation titles */
+    background: transparent; /* no background color */
+    font-size: 2.3rem;
+    z-index: 10;
+}
+
+
+img[src="images/home.jpg"] {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*subtle shadow */
+   
+}
+
+/* Variation Image */
+img[src="images/home.jpg"] {
+    width: 80%; 
+    max-height: 400px; 
+    border-radius: 50%; /* circle */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  
+}
+
+img {
+    width: 100%; /* Adjust the width */
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    margin-bottom: 20px; /* below each image */
+}
+
+
+
+
+
+
+  
